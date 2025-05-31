@@ -1,0 +1,552 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BUT Réseaux & Télécommunications - IUT Béziers</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">
+      <img src="assets/img/logo.png" alt="Logo IUT" height="40">
+      <span class="lang-fr">BUT RT</span><span class="lang-en d-none">Networking & Telecoms</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="#program"><span class="lang-fr">Programme</span><span class="lang-en d-none">Curriculum</span></a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><span class="lang-fr">Domaines</span><span class="lang-en d-none">Fields</span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#telecoms"><span class="lang-fr">Télécoms</span><span class="lang-en d-none">Telecommunications</span></a></li>
+            <li><a class="dropdown-item" href="#network"><span class="lang-fr">Réseau</span><span class="lang-en d-none">Networking</span></a></li>
+            <li><a class="dropdown-item" href="#dev"><span class="lang-fr">Programmation</span><span class="lang-en d-none">Programming</span></a></li>
+            <li><a class="dropdown-item" href="#paths"><span class="lang-fr">Parcours</span><span class="lang-en d-none">Tracks</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><span class="lang-fr">Projets</span><span class="lang-en d-none">Projects</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#location"><span class="lang-fr">Localisation</span><span class="lang-en d-none">Location</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#admission"><span class="lang-fr">Admission</span><span class="lang-en d-none">Admission</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><span class="lang-fr">Contact</span><span class="lang-en d-none">Contact</span></a></li>
+      </ul>
+      <button id="toggle-lang" class="btn btn-outline-light btn-sm me-2">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header id="home" class="header-bg vh-100 d-flex align-items-center justify-content-center text-center pt-5">
+  <div class="container">
+    <h1 class="display-4">
+      <span class="lang-fr">Bienvenue en BUT Réseaux & Télécoms</span>
+      <span class="lang-en d-none">Welcome to Networking & Telecoms Degree</span>
+    </h1>
+    <p class="lead">
+      <span class="lang-fr">3 ans pour devenir un expert du numérique</span>
+      <span class="lang-en d-none">3 years to become a digital expert</span>
+      <span></br><strong>IUT de Béziers</strong></span>
+    </p>
+    <a href="#program" class="btn btn-primary btn-lg mt-3">
+      <span class="lang-fr">Découvrir</span><span class="lang-en d-none">Explore</span>
+    </a>
+  </div>
+</header>
+
+<!-- PROGRAMME -->
+<section id="program" class="py-5">
+  <div class="container">
+    <h2 class="mb-4"><span class="lang-fr">Programme en 3 ans</span><span class="lang-en d-none">3-year Curriculum</span></h2>
+    <div class="row text-center">
+      <!-- Year 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title"><span class="lang-fr">Année 1</span><span class="lang-en d-none">Year 1</span></h5>
+            <ul class="list-unstyled">
+              <li><span class="lang-fr">Introduction réseaux (OSI, TCP/IP)</span><span class="lang-en d-none">Networking basics (OSI, TCP/IP)</span></li>
+              <li><span class="lang-fr">Linux & scripting Bash</span><span class="lang-en d-none">Linux & Bash scripting</span></li>
+              <li><span class="lang-fr">Bases télécommunications</span><span class="lang-en d-none">Telecom fundamentals</span></li>
+              <li><span class="lang-fr">Projet hackathon</span><span class="lang-en d-none">Python hackathon</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Year 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title"><span class="lang-fr">Année 2</span><span class="lang-en d-none">Year 2</span></h5>
+            <ul class="list-unstyled">
+              <li><span class="lang-fr">Approfondissement réseau (VLAN, VPN)</span><span class="lang-en d-none">Advanced networking (VLAN, VPN)</span></li>
+              <li><span class="lang-fr"></span><span class="lang-en d-none"></span></li>
+              <li><span class="lang-fr">Alternance & projets réels</span><span class="lang-en d-none">Work-study & real projects</span></li>
+              <li><span class="lang-fr">Spécialisation: cybersécurité ou cloud</span><span class="lang-en d-none">Specialization: cybersecurity or cloud</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Year 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title"><span class="lang-fr">Année 3</span><span class="lang-en d-none">Year 3</span></h5>
+            <ul class="list-unstyled">
+              <li><span class="lang-fr"></span><span class="lang-en d-none"></span></li>
+              <li><span class="lang-fr">Alternance & projets réels</span><span class="lang-en d-none">Work-study & real projects</span></li>
+              <li><span class="lang-fr">Préparation portfolio compétences</span><span class="lang-en d-none">Skills portfolio preparation</span></li>
+              <li><span class="lang-fr">Soutenance & encadrement pro</span><span class="lang-en d-none">Defense & professional guidance</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORGANISATION -->
+<section id="organization" class="py-5 bg-light">
+  <div class="container">
+    <h2><span class="lang-fr">Organisation des cours</span><span class="lang-en d-none">Course Structure</span></h2>
+    <p>
+      <span class="lang-fr">Au total, nous avons environ 40 ressources (cours magistraux, TD, TP) considérées comme des matières à part entière.</span>
+      <span class="lang-en d-none">In total, we have around 40 resources (lectures, tutorials, labs) treated as distinct subjects.</span>
+    </p>
+    <p>
+      <span class="lang-fr">Ces enseignements se répartissent en trois grands types :</span>
+      <span class="lang-en d-none">These teachings are divided into three main formats:</span>
+    </p>
+    <ul>
+      <li>
+        <span class="lang-fr"><strong>CM</strong> (Cours Magistraux) : sessions en amphithéâtre avec toute la promotion, prise de notes obligatoire.</span>
+        <span class="lang-en d-none"><strong>Lectures</strong>: auditorium sessions with the entire cohort, note-taking mandatory.</span>
+      </li>
+      <li>
+        <span class="lang-fr"><strong>TD</strong> (Travaux Dirigés) : travaux pratiques encadrés en demi-groupes pour échanges et exercices en classe.</span>
+        <span class="lang-en d-none"><strong>Tutorials</strong>: supervised practical work in half-groups for in-class exercises and discussions.</span>
+      </li>
+      <li>
+        <span class="lang-fr"><strong>TP</strong> (Travaux Pratiques) : sessions intensives en quarts de promotion (~13 étudiants), manipulation de matériel et outils.</span>
+        <span class="lang-en d-none"><strong>Lab Sessions</strong>: intensive sessions in quarter-groups (~13 students), hands-on equipment and tools use.</span>
+      </li>
+    </ul>
+    <p>
+      <span class="lang-fr">Chaque UE comprend une SAE majeure, qui est un projet concret de plusieurs dizaines d’heures en autonomie et souvent en binôme, pour appliquer les compétences acquises.</span>
+      <span class="lang-en d-none">Each UE includes a major SAE project of several dozen hours of independent work to apply the acquired skills.</span>
+    </p>
+  </div>
+</section>
+
+
+
+<!-- UE INTRO -->
+<section id="ues" class="py-5">
+  <div class="container">
+    <h2><span class="lang-fr">Unité d'Enseignement (UE)</span><span class="lang-en d-none">Teaching Units (UE)</span></h2>
+    <p>
+      <span class="lang-fr">Les UEs sont des blocs thématiques regroupant cours magistraux, TD, TP et projets. Chaque UE permet d'acquérir des compétences spécifiques et de les mettre en pratique via une SAE majeure.</span>
+      <span class="lang-en d-none">UEs are thematic blocks combining lectures, tutorials, labs, and projects. Each UE develops specific skills applied through a major SAE project.</span>
+    </p>
+    <ul>
+            <li><span class="lang-fr"><strong>UE.1 :</strong> Connecter les entreprises et les usagers (Télécommunications)</span><span class="lang-en d-none"><strong>UE2.2:</strong> Connecting Businesses and Users</span></li>
+      <li><span class="lang-fr"><strong>UE.2 :</strong> Administrer les réseaux et l'Internet (Réseau)</span><span class="lang-en d-none"><strong>UE2.1:</strong> Network and Internet Administration</span></li>
+      <li><span class="lang-fr"><strong>UE.3 :</strong> Créer des outils et applications informatiques pour les R&T (Programmation)</span><span class="lang-en d-none"><strong>UE2.3:</strong> Developing IT Tools and Applications for Networks & Telecoms</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- DOMAINES -->
+<section id="telecoms" class="py-5 bg-light">
+  <div class="container">
+    <h2><span class="lang-fr">Télécommunications</span><span class="lang-en d-none">Telecommunications</span></h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p><span class="lang-fr">Explorez les ondes et supports physiques :</span><span class="lang-en d-none">Explore waves and physical media:</span></p>
+        <ul>
+          <li><span class="lang-fr">Fibre optique & câble coaxial</span><span class="lang-en d-none">Fiber optics & coaxial cables</span></li>
+          <li><span class="lang-fr">Modulation analogique et numérique (FM, FSK)</span><span class="lang-en d-none">Analog & digital modulation (FM, FSK)</span></li>
+          <li><span class="lang-fr">Réception satellite & GNURadio</span><span class="lang-en d-none">Satellite reception & GNURadio</span></li>
+          <li><span class="lang-fr">Electronique : générateur de signal & oscilloscope</span><span class="lang-en d-none">Labs: signal generator & oscilloscope</span></li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="card h-100" data-tilt>
+        <!-- Insert telecom image here -->
+        <img src="assets/img/telecom_lab.jpg" alt="TP Télécoms" class="img-fluid rounded"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEAU -->
+<section id="network" class="py-5">
+  <div class="container">
+    <h2><span class="lang-fr">Réseau</span><span class="lang-en d-none">Networking</span></h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <!-- Insert network topology image -->
+        <div class="card h-100" data-tilt>
+        <img src="assets/img/network_topology.png" alt="Topologie réseau" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <p><span class="lang-fr">Maîtrisez la conception et la sécurité :</span><span class="lang-en d-none">Master design and security:</span></p>
+        <ul>
+          <li><span class="lang-fr">Segmentation VLAN & ACL</span><span class="lang-en d-none">VLAN segmentation & ACLs</span></li>
+          <li><span class="lang-fr">VPN site-à-site & IPsec</span><span class="lang-en d-none">Site-to-site VPN & IPsec</span></li>
+          <li><span class="lang-fr">Routage OSPF, RIP, BGP</span><span class="lang-en d-none">Routing OSPF, RIP, BGP</span></li>
+          <li><span class="lang-fr">Supervision SNMP & analyse Wireshark</span><span class="lang-en d-none">SNMP monitoring & Wireshark analysis</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMATION -->
+<section id="dev" class="py-5 bg-light">
+  <div class="container">
+    <h2><span class="lang-fr">Programmation</span><span class="lang-en d-none">Programming</span></h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p><span class="lang-fr">Créez des outils et automatisez :</span><span class="lang-en d-none">Build tools and automate:</span></p>
+        <ul>
+          <li><span class="lang-fr">Python: scripts d'automatisation & traitement des données</span><span class="lang-en d-none">Python: automation scripts & data processing</span></li>
+          <li><span class="lang-fr">Bash: gestion système & déploiement</span><span class="lang-en d-none">Bash: system management & deployment</span></li>
+          <li><span class="lang-fr">SQL: requêtes & bases relationnelles</span><span class="lang-en d-none">SQL: queries & relational databases</span></li>
+          <li><span class="lang-fr">Web: HTML, CSS, JavaScript & PHP</span><span class="lang-en d-none">Web: HTML, CSS, JavaScript & PHP</span></li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="card h-100" data-tilt>
+        <!-- Insert programming code screenshot -->
+        <img src="assets/img/code_snippet.png" alt="Code snippet" class="img-fluid rounded"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="paths" class="py-5">
+  <div class="container">
+    <h2><span class="lang-fr">Parcours à partir de la deuxième année</span><span class="lang-en d-none">Tracks from the second year</span></h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="assets/img/cybersecurity_icon.png" alt="Cybersécurité" class="mb-2" height="60">
+        <h5><span class="lang-fr">Cybersécurité</span><span class="lang-en d-none">Cybersecurity</span></h5>
+        <p><span class="lang-fr">Analyse de vulnérabilités, pentesting, sécurité réseau.</span><span class="lang-en d-none">Vulnerability analysis, pentesting, network security.</span></p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="assets/img/cloud_icon.png" alt="Cloud" class="mb-2" height="60">
+        <h5><span class="lang-fr">Cloud</span><span class="lang-en d-none">Cloud</span></h5>
+        <p><span class="lang-fr">Docker, Kubernetes, services AWS/GCP.</span><span class="lang-en d-none">Docker, Kubernetes, AWS/GCP services.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h2><span class="lang-fr">Portfolio de compétences</span><span class="lang-en d-none">Skills Portfolio</span></h2>
+    <p>
+      <span class="lang-fr">À la fin de chaque année, chaque étudiant doit constituer un portfolio de compétences. Ce document regroupe :</span>
+      <span class="lang-en d-none">At the end of each year, each student must compile a skills portfolio. This document includes:</span>
+    </p>
+    <ul>
+      <li><span class="lang-fr">La liste des compétences acquises (techniques, organisationnelles, projet).</span><span class="lang-en d-none">A list of acquired skills (technical, organizational, project).</span></li>
+      <li><span class="lang-fr">Des preuves concrètes : réalisations de TP, SAE, projets, captures d’écran, extraits de code.</span><span class="lang-en d-none">Concrete evidence: lab work, SAE projects, screenshots, code snippets.</span></li>
+      <li><span class="lang-fr">Une réflexion personnelle sur l’évolution et les axes d’amélioration.</span><span class="lang-en d-none">Personal reflection on progress and areas for improvement.</span></li>
+      <li><span class="lang-fr">Une présentation synthétique et professionnelle, prête à être valorisée auprès des employeurs.</span><span class="lang-en d-none">A concise and professional presentation ready to showcase to employers.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJETS & SAE -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2><span class="lang-fr">Vidéo de présentation</span><span class="lang-en d-none">Presentation Video</span></h2>
+    <div class="ratio ratio-16x9 mb-4">
+      <iframe src="https://youtu.be/rJ-K7TkCWuw" title="YouTube video" allowfullscreen></iframe>
+    </div>
+    <hr class="my-4">
+    <h3 class="text-center">
+      <span class="lang-fr">Exemples de SAE & Projets</span>
+      <span class="lang-en d-none">Sample SAE & Projects</span>
+    </h3>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="assets/img/SAE.jpg" 
+            alt="Traitement de données" 
+            class="img-fluid rounded mb-2">
+        <h6>
+          <span class="lang-fr">SAE 15 : Traitement de données pour Montpellier </span>
+          <span class="lang-en d-none">SAE 15: Data Processing for Montpellier </span>
+        </h6>
+        <p class="small mb-2"> <span class="lang-fr">Exploitation de données brutes provenant d'API avec Python et pandas pour les extraire, les analyser et en conclure sur l'efficacité des parkings de la ville.</span> <span class="lang-en d-none">Processed raw data from APIs with Python and pandas to extract, analyze, and draw conclusions about the efficiency of city parking.</span> </p>
+        <p>
+          <a href="https://snowpeakpro.github.io/SAE_INFO/" target="_blank" class="btn btn-sm btn-outline-primary">
+            <span class="lang-fr">Voir le site</span>
+            <span class="lang-en d-none">View site</span>
+          </a>
+        </p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <img src="assets/img/voiture.jpg" 
+            alt="Création de site web" 
+            class="img-fluid rounded mb-2">
+        <h6>
+          <span class="lang-fr">SAE 2.2 : Développement de site web dynamique</span>
+          <span class="lang-en d-none">SAE 2.2: Dynamic Website Development</span>
+        </h6>
+        <p class="small mb-2"> <span class="lang-fr">Conception et réalisation d’un site web interactif en HTML, CSS, JavaScript et PHP, avec gestion de contenu dynamique.</span> <span class="lang-en d-none">Designed and built an interactive website in HTML, CSS, JavaScript, and PHP, featuring dynamic content management.</span> </p>
+        <p>
+        </br>
+          <a href="https://r207.borelly.net/~u22404768/SAE23/pages/" target="_blank" class="btn btn-sm btn-outline-primary">
+            <span class="lang-fr">Voir le site</span>
+            <span class="lang-en d-none">View site</span>
+          </a>
+        </p>
+      </div>
+
+
+      <div class="col-md-4 text-center">
+        <img src="assets/img/hackathon.jpg" alt="Hackathon Python" class="img-fluid rounded mb-2">
+        <h6><span class="lang-fr">Hackathon</span><span class="lang-en d-none">Hackathon</span></h6>
+        <p class="small mb-2"> <span class="lang-fr">Création de l’application CARBON avec PyQt5 et SQLite : interface graphique, base de données, système de points et badges.</span> <span class="lang-en d-none">Developed the CARBON app using PyQt5 and SQLite: graphical interface, database integration, and a points & badges system.</span> </p>
+        <p>
+          <a href="https://coopere34.org/hackathon-2025-transition-ecologique-developpement-soutenable#:~:text=Du%2011%20au%2014%20mars,du%20Hackathon%20de%20l'entrepreneuriat." target="_blank" class="btn btn-sm btn-outline-primary">
+            <span class="lang-fr">Voir le Hackathon</span>
+            <span class="lang-en d-none">View Hackathon</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center"><span class="lang-fr">Où nous trouver</span><span class="lang-en d-none">Find Us</span></h2>
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    <p class="mt-3 text-center">
+      <span class="lang-fr">IUT Béziers, Avenue Jean Moulin, 34500 Béziers</span>
+      <span class="lang-en d-none">IUT Béziers, Avenue Jean Moulin, 34500 Béziers, France</span>
+    </p>
+  </div>
+</section>
+
+
+<!-- ADMISSION -->
+<section id="admission" class="py-5">
+  <div class="container text-center">
+    <h2><span class="lang-fr">Taux d'admission</span><span class="lang-en d-none">Admission Rate</span></h2>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-3 mb-3">
+        <div class="admission-box">
+          <h5><span class="lang-fr">Bac Général</span><span class="lang-en d-none">General Baccalaureate</span></h5>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 0;" data-target="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 mb-3">
+        <div class="admission-box">
+          <h5><span class="lang-fr">Bac STI2D</span><span class="lang-en d-none">STI2D Baccalaureate</span></h5>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 0;" data-target="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+          </div>
+        </div>
+      </div>
+      <p></br><span class="lang-fr">Inscription via Parcoursup uniquement</span><span class="lang-en d-none">Inscription by parcoursup only</span></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ACTIVITIES -->
+<section id="activities" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 text-center"><span class="lang-fr">À découvrir autour de l'IUT</span><span class="lang-en d-none">Things to do around the IUT</span></h2>
+    <div class="row">
+      <div class="col-md-4 text-center mb-4">
+        <!-- Icon/Image for BarJoe -->
+        <img src="assets/img/barjoe.jpg" alt="BarJoe" class="img-fluid rounded mb-2 activities-icon">
+        <h5><span class="lang-fr">BarJoe</span><span class="lang-en d-none">BarJoe</span></h5>
+        <p class="small">
+          <span class="lang-fr">Bar convivial idéal pour se détendre après les cours.</span>
+          <span class="lang-en d-none">Friendly bar perfect to relax after classes.</span>
+        </p>
+      </div>
+      <!-- Basic Fit -->
+      <div class="col-md-4 text-center mb-4">
+        <img src="assets/img/basicfit.jpg" alt="Basic-Fit Béziers" class="img-fluid rounded mb-2 activities-icon">
+        <h5>
+          <span class="lang-fr">Basic-Fit Béziers</span>
+          <span class="lang-en d-none">Basic-Fit Béziers</span>
+        </h5>
+        <p class="small">
+          <span class="lang-fr">Salle de sport moderne à 5 min de l’IUT pour garder la forme.</span>
+          <span class="lang-en d-none">Modern gym 5 min from the IUT to stay in shape.</span>
+        </p>
+      </div>
+      
+      <!-- Restaurant -->
+      <div class="col-md-4 text-center mb-4">
+        <img src="assets/img/restaurant_local.jpg" alt="Restaurant local" class="img-fluid rounded mb-2 activities-icon">
+        <h5>
+          <span class="lang-fr">Le Petit Bistronome</span>
+          <span class="lang-en d-none">Le Petit Bistronome</span>
+        </h5>
+        <p class="small">
+          <span class="lang-fr">Cuisine locale et ambiance chaleureuse à deux pas du campus.</span>
+          <span class="lang-en d-none">Local cuisine and cozy atmosphere just steps from campus.</span>
+        </p>
+      </div>
+      
+      <!-- Nightclub -->
+      <div class="col-md-4 text-center mb-4">
+        <img src="assets/img/nightclub.jpg" alt="Nightclub" class="img-fluid rounded mb-2 activities-icon">
+        <h5>
+          <span class="lang-fr">Le Next Club</span>
+          <span class="lang-en d-none">Le Next Club</span>
+        </h5>
+        <p class="small">
+          <span class="lang-fr">Boîte de nuit animée pour vos soirées étudiantes.</span>
+          <span class="lang-en d-none">Lively nightclub for your student nights out.</span>
+        </p>
+      </div>
+      
+      <!-- Polygone de Béziers -->
+      <div class="col-md-4 text-center mb-4">
+        <img src="assets/img/polygone_beziers.jpg" alt="Polygone Béziers" class="img-fluid rounded mb-2 activities-icon">
+        <h5>
+          <span class="lang-fr">Polygone Béziers</span>
+          <span class="lang-en d-none">Polygone Béziers</span>
+        </h5>
+        <p class="small">
+          <span class="lang-fr">Centre commercial pour shopping et sorties cinéma.</span>
+          <span class="lang-en d-none">Shopping mall for retail therapy and cinema outings.</span>
+        </p>
+      </div>
+      
+      <!-- 5e activité au choix -->
+      <div class="col-md-4 text-center mb-4">
+        <img src="assets/img/canal_du_midi.jpg" alt="Canal du Midi" class="img-fluid rounded mb-2 activities-icon b">
+        <h5>
+          <span class="lang-fr">Les berges du Canal du Midi</span>
+          <span class="lang-en d-none">Canal du Midi Banks</span>
+        </h5>
+        <p class="small">
+          <span class="lang-fr">Balade paisible au bord de l’eau pour étudier ou se ressourcer.</span>
+          <span class="lang-en d-none">Peaceful stroll by the water to study or unwind.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+        <h2 class="d-flex align-items-center justify-content-left">
+          <span class="lang-fr me-2">Contacter un étudiant RT</span>
+          <span class="lang-en d-none me-2">Contact a student</span>
+          <a href="https://www.instagram.com/loic_vf" target="_blank" aria-label="Instagram">
+            <img src="assets/img/instagram.png" alt="Instagram" class="contact-social-icon" />
+          </a>
+        </h2>
+    <form action="contact.php" method="post" class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label"><span class="lang-fr">Nom</span><span class="lang-en d-none">Name</span></label>
+        <input type="text" name="name" class="form-control" placeholder="John Doe" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label"><span class="lang-fr">Email</span><span class="lang-en d-none">Email</span></label>
+        <input type="email" name="email" class="form-control" placeholder="example@mail.com" required>
+      </div>
+      <div class="col-md-12">
+        <label class="form-label"><span class="lang-fr">Message</span><span class="lang-en d-none">Message</span></label>
+        <textarea name="message" class="form-control" rows="4" placeholder="Votre message..." required></textarea>
+      </div>
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary"><span class="lang-fr">Envoyer</span><span class="lang-en d-none">Send</span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- BACK TO TOP -->
+<a href="#" id="back-to-top">
+  <!-- Placez votre image ici (48×48px par exemple) -->
+  <img src="assets/img/back_to_top.png" alt="Back to Top" class="back-to-top-icon" />
+</a>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4">
+  <div class="container text-center">
+
+    <p>
+      <span class="lang-fr">© 2025 BUT Réseaux & Télécommunications - IUT Béziers. Mentions légales, politique de confidentialité, crédits site Loïc VIDAL-FERRASSE</span>
+      <span class="lang-en d-none">© 2025 Networking & Telecoms - IUT Béziers. Legal notice, privacy policy, credits site Loïc VIDAL-FERRASSE</span>
+    </p>
+    
+    <div class="social-icons mt-2">
+      <a href="https://www.umontpellier.fr/" target="_blank" aria-label="Montpellier">
+        <!-- Placez votre icône Montpellier ici -->
+        <img src="assets/img/univ_montpellier.png" alt="Montpellier" class="social-icon-montpellier" />
+      </a>
+      <a href="https://www.instagram.com/iutbeziers/" target="_blank" aria-label="Instagram">
+        <!-- Placez votre icône Instagram ici -->
+        <img src="assets/img/instagram.png" alt="Instagram" class="social-icon-insta" />
+      </a>
+      <a href="https://www.facebook.com/iutbeziers/" target="_blank" aria-label="Facebook" class="ms-3">
+        <!-- Placez votre icône Facebook ici -->
+        <img src="assets/img/facebook.png" alt="Facebook" class="social-icon" />
+      </a>
+      <a href="https://www.linkedin.com/school/iut-de-b%C3%A9ziers/mycompany/" target="_blank" aria-label="Linkdin" class="ms-3">
+        <!-- Placez votre icône Linkdin ici -->
+        <img src="assets/img/linkedin.png" alt="Linkdin" class="social-icon" />
+      </a>
+      <a href="https://twitter.com/Iutbeziers" target="_blank" aria-label="X" class="ms-3">
+        <!-- Placez votre icône X ici -->
+        <img src="assets/img/x.png" alt="X" class="social-icon-x" />
+      </a>
+      <a href="https://www.iutbeziers.fr/rt-beziers.html" target="_blank" aria-label="IUT Béziers website" class="ms-3">
+        <!-- Placez votre icône du site ici -->
+        <img src="assets/img/logo_iut.png" alt="IUT Béziers" class="social-icon-iut" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Leaflet JS (must come before your own script) -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- VanillaTilt JS -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+<!-- Your script -->
+<script src="assets/js/script.js"></script>
+
+
+</body>
+</html>
